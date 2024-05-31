@@ -1,0 +1,82 @@
+.navbar{
+    flex:100%;
+    background:none;
+    height:auto;
+    display:flex;
+    justify-content:space-between;
+}
+.logo{
+    margin:10px 30px;
+}
+.logo img{
+    width:100px;
+    border-radius:100%;
+}
+.links{
+    margin:30px;
+}
+.links a{
+    color:white;
+    margin:0 40px;
+    font-size:15px;
+    text-decoration:none;
+    padding:2px 5px;
+}
+.links a button{
+    background:none;
+    border:1px solid white;
+    font-size:10px;
+    color:white;
+    padding:2px 5px;
+    outline:none;
+    cursor:pointer;
+}
+
+.sidebar{
+    display:none;
+}
+
+
+.links a:hover{
+    background:rgba(255, 255, 255, 0.3);
+}
+
+
+@media screen and (max-width:650px){
+.links{
+    display:none;
+}
+    .sidebar{
+        display:flex;
+        flex-direction:column;
+        margin:3px;
+        height:auto;
+        background:rgb(131, 11, 31);
+        position:absolute;
+        width:25%;
+        right:10px;
+        top:10px;
+        border-radius:10px;
+        display:block;
+    }
+   .sidebar a{
+    color:white;
+    display:flex;
+    margin:30px;
+    font-family:sans-serif;
+    font-size:10px;
+    text-decoration:none;
+   }
+   .sidebar button{
+    background:none;
+    color:white;
+    outline:none;
+    border:0;
+   }
+   .sidebar  button{
+    text-decoration:none;
+    font-size:10px;
+   }
+
+}
+
